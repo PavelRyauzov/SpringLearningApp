@@ -10,7 +10,7 @@ public class Person {
     @NotEmpty(message = "Name should be not empty")
     @Size(min = 2, max = 30, message = "Name length must be greater than 2 and less than 30 characters")
     private String name;
-    @Min(value = 14, message = "Invalid age value: age should be greater than 14")
+    @Min(value = 0, message = "Invalid age value: age should be greater than 0")
     private int age;
     @NotEmpty(message = "Invalid input email: email should be not empty")
     @Email(message = "email should be a valid")
